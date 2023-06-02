@@ -1,0 +1,9 @@
+[1230/031639.618:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[1230/031639.740:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0101/003635.449:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0226/132447.576:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0226/173929.048:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0226/181222.903:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0515/131759.322:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[0515/131759.339:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[0515/131759.485:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
