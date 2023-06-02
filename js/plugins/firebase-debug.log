@@ -1,0 +1,90 @@
+[debug] [2023-05-31T15:21:21.308Z] ----------------------------------------------------------------------
+[debug] [2023-05-31T15:21:21.310Z] Command:       /usr/local/bin/node /Users/grantwatkins/.npm-global/bin/firebase deploy
+[debug] [2023-05-31T15:21:21.311Z] CLI Version:   12.2.1
+[debug] [2023-05-31T15:21:21.311Z] Platform:      darwin
+[debug] [2023-05-31T15:21:21.312Z] Node Version:  v18.16.0
+[debug] [2023-05-31T15:21:21.313Z] Time:          Wed May 31 2023 10:21:21 GMT-0500 (Central Daylight Time)
+[debug] [2023-05-31T15:21:21.313Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-31T15:21:21.382Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-31T15:21:21.382Z] > authorizing via signed-in user (grant@eyf.money)
+[debug] [2023-05-31T15:21:21.382Z] [iam] checking project eyf-alpha-testing for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-31T15:21:21.384Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions [none]
+[debug] [2023-05-31T15:21:21.384Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions x-goog-quota-user=projects/eyf-alpha-testing
+[debug] [2023-05-31T15:21:21.384Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-31T15:21:21.565Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions 200
+[debug] [2023-05-31T15:21:21.565Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-31T15:21:21.566Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eyf-alpha-testing [none]
+[debug] [2023-05-31T15:21:21.934Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eyf-alpha-testing 200
+[debug] [2023-05-31T15:21:21.935Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eyf-alpha-testing {"projectId":"eyf-alpha-testing","projectNumber":"921503309689","displayName":"EYF Alpha Testing","name":"projects/eyf-alpha-testing","resources":{"hostingSite":"eyf-alpha-testing"},"state":"ACTIVE","etag":"1_7125b6fb-77c2-4618-b7a1-c00256eb19d7"}
+[info] 
+[info] === Deploying to 'eyf-alpha-testing'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-31T15:21:21.943Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eyf-alpha-testing/versions [none]
+[debug] [2023-05-31T15:21:21.943Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eyf-alpha-testing/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-31T15:21:22.546Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eyf-alpha-testing/versions 200
+[debug] [2023-05-31T15:21:22.547Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eyf-alpha-testing/versions {"name":"projects/921503309689/sites/eyf-alpha-testing/versions/716f12a8521643a4","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[eyf-alpha-testing]: beginning deploy... 
+[debug] [2023-05-31T15:21:22.626Z] Error: EPERM: operation not permitted, scandir '/Users/grantwatkins/.Trash'
+    at Object.readdirSync (node:fs:1452:3)
+    at GlobSync._readdir (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:288:46)
+    at GlobSync._readdirInGlobStar (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:245:17)
+    at GlobSync._readdir (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:276:17)
+    at GlobSync._processReaddir (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:137:22)
+    at GlobSync._process (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:132:10)
+    at GlobSync._processGlobStar (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:380:10)
+    at GlobSync._process (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:130:10)
+    at new GlobSync (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:45:10)
+    at globSync (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-06-01T16:09:32.632Z] ----------------------------------------------------------------------
+[debug] [2023-06-01T16:09:32.635Z] Command:       /usr/local/bin/node /Users/grantwatkins/.npm-global/bin/firebase deploy --debug
+[debug] [2023-06-01T16:09:32.636Z] CLI Version:   12.2.1
+[debug] [2023-06-01T16:09:32.636Z] Platform:      darwin
+[debug] [2023-06-01T16:09:32.636Z] Node Version:  v18.16.0
+[debug] [2023-06-01T16:09:32.657Z] Time:          Thu Jun 01 2023 11:09:32 GMT-0500 (Central Daylight Time)
+[debug] [2023-06-01T16:09:32.657Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-01T16:09:32.660Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-06-01T16:09:32.804Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-01T16:09:32.805Z] > authorizing via signed-in user (grant@eyf.money)
+[debug] [2023-06-01T16:09:32.806Z] [iam] checking project eyf-alpha-testing for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-01T16:09:32.807Z] > refreshing access token with scopes: []
+[debug] [2023-06-01T16:09:32.809Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-01T16:09:32.809Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-01T16:09:32.937Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-06-01T16:09:32.937Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-06-01T16:09:32.970Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-01T16:09:32.970Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-01T16:09:32.997Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions [none]
+[debug] [2023-06-01T16:09:32.999Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions x-goog-quota-user=projects/eyf-alpha-testing
+[debug] [2023-06-01T16:09:33.000Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-01T16:09:33.149Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions 200
+[debug] [2023-06-01T16:09:33.149Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyf-alpha-testing:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-01T16:09:33.151Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eyf-alpha-testing [none]
+[debug] [2023-06-01T16:09:33.436Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eyf-alpha-testing 200
+[debug] [2023-06-01T16:09:33.436Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eyf-alpha-testing {"projectId":"eyf-alpha-testing","projectNumber":"921503309689","displayName":"EYF Alpha Testing","name":"projects/eyf-alpha-testing","resources":{"hostingSite":"eyf-alpha-testing"},"state":"ACTIVE","etag":"1_7125b6fb-77c2-4618-b7a1-c00256eb19d7"}
+[info] 
+[info] === Deploying to 'eyf-alpha-testing'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-06-01T16:09:33.446Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eyf-alpha-testing/versions [none]
+[debug] [2023-06-01T16:09:33.446Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eyf-alpha-testing/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-06-01T16:09:34.048Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eyf-alpha-testing/versions 200
+[debug] [2023-06-01T16:09:34.048Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eyf-alpha-testing/versions {"name":"projects/921503309689/sites/eyf-alpha-testing/versions/7592dd1cedbd0813","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[eyf-alpha-testing]: beginning deploy... 
+[debug] [2023-06-01T16:09:34.230Z] Error: EPERM: operation not permitted, scandir '/Users/grantwatkins/.Trash'
+    at Object.readdirSync (node:fs:1452:3)
+    at GlobSync._readdir (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:288:46)
+    at GlobSync._readdirInGlobStar (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:245:17)
+    at GlobSync._readdir (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:276:17)
+    at GlobSync._processReaddir (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:137:22)
+    at GlobSync._process (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:132:10)
+    at GlobSync._processGlobStar (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:380:10)
+    at GlobSync._process (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:130:10)
+    at new GlobSync (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:45:10)
+    at globSync (/Users/grantwatkins/.npm-global/lib/node_modules/firebase-tools/node_modules/glob/sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
