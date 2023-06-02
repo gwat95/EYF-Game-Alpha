@@ -1,0 +1,4 @@
+[1018/215809.416:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[1020/122300.992:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[1020/122301.021:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[1020/122301.108:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
