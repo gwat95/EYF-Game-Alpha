@@ -1,0 +1,3 @@
+EYF.addToJobBoard(3, 20, 10, null, 2000, 10, "Camera Man", "Photography for money.", "Prosperity Homes", [4,17,23]);
+EYF.addToJobBoard(1, 10, 3, null, 300, 350, "Assistant Librarian", "Assist the librarian.", "University", [9,29,11]);
+EYF.addToJobBoard(1, 70, 1, null, 1000, 150, "Grocery Boy", "Stock the items in the grocery \nand assist customers.", "Grocery", [5,23,6]);
