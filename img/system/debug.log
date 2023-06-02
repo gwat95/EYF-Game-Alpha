@@ -1,0 +1,12 @@
+[1226/113533.580:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[1227/102314.097:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[1228/011147.609:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[1228/011147.689:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0102/004847.228:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0105/233305.646:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0220/224740.108:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0228/233914.512:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[0228/233914.547:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0301/234428.244:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0516/014852.353:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0516/171354.499:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
