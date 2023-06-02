@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="user-scalable=no">
+        <link rel="icon" href="icon/icon.png" type="image/png">
+        <link rel="apple-touch-icon" href="icon/icon.png">
+        <link rel="stylesheet" type="text/css" href="css/game.css">
+        <title>Money Quest</title>
+
+        <style>
+            @font-face {
+                font-family: MainFontFile;
+                src: url('fonts/GolosText-VariableFont_wght.ttf');
+            }
+
+            #minimap-parent {
+                position:absolute;
+                z-index: 120;
+                overflow: hidden;
+                height:400px;
+                width:710px;
+                left:220px;
+                top:130px;
+            }
+            #minimap-viewport {
+                cursor: grab;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height:400px;
+                width:710px;
+            }
+        </style>
+    </head>
+    <body style="background-color: black" oncontextmenu="false">
+        <script type="text/javascript" src="js/main.js"></script>
+        <div id="loginBox" style="display:none; position: absolute; z-index: 200; top: 70%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 200px; background-color: #fef9ef; border: 1px solid #e8e8bf; padding: 20px;">
+            <h3 style="text-align: center; font-family: MainFontFile">Login or Register</h3>
+            <form>
+              <label for="email">Email:</label>
+              <input id="input-email" type="email" id="email" name="email" style="background-color: white; width: 100%; margin-bottom: 10px; padding: 5px;">
+              <label for="password">Password:</label>
+              <input id="input-password" type="password" id="password" name="password" style="background-color: white; width: 100%; margin-bottom: 10px; padding: 5px;">
+
+            </form>
+            <div style="display: flex; justify-content: space-between; ">
+                <button id="login-btn" type="submit" style="font-family: MainFontFile; background-color: #4a50a6; color: white; border: none; padding: 5px 10px; cursor: pointer;">Login</button>
+                <button id="register-btn" type="submit" style="font-family: MainFontFile; background-color: #8b8883; color: white; border: none; padding: 5px 10px; cursor: pointer;">Register</button>
+              </div>
+          </div>
+    </body>
+</html>
